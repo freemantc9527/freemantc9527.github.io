@@ -5,6 +5,7 @@ site_author: IT山人
 
 repo_name: 'freemantc9527/freemantc9527.github.io'
 repo_url: 'https://github.com/freemantc9527/freemantc9527.github.io'
+edit_uri: ""
 
 theme:
   name: material
