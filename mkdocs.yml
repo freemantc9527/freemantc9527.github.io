@@ -1,0 +1,112 @@
+dev_addr: '127.0.0.1:8008'
+
+site_name: 我的站点
+site_author: IT山人
+
+repo_name: 'freemantc9527/freemantc9527.github.io'
+repo_url: 'https://github.com/freemantc9527/freemantc9527.github.io'
+
+theme:
+  name: material
+  font: false
+  language: 'zh'
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.instant
+    # - navigation.sections
+    - navigation.indexes
+  palette: 
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到夜间模式
+    - scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到白天模式
+  icon:
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+
+plugins:
+  - search:
+      lang: 
+        - ja
+  - git-revision-date
+  - tags:
+      tags_file: tags.md
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - meta
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      auto_title: true
+  - pymdownx.keys
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  generator: true
+  social: # 社交账号
+    - icon: fontawesome/brands/github
+      link: https://github.com/freemantc9527
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/watchmant9
+    - icon: fontawesome/brands/git-alt
+      link: https://freemantc.gitee.io/
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+
+nav:
+  - 首页: index.md
+  # - 系列文章:
+  - 2019年文档:
+    - Markdown入门: 2019/markdown-getting-started.md
+    - Macaron马卡龙系颜色表: 2019/macaron-colors.md
+  - 面向对象编程:
+    - 序言: object-oriented-programming/README.md
+    - 基础知识: object-oriented-programming/basic.md
+    - 类与接口: object-oriented-programming/class-interface.md
+    - 多态详解: object-oriented-programming/polymorphism.md
+    - 工厂模式: object-oriented-programming/factory.md
+    - 单例模式: object-oriented-programming/singleton.md
+    - 依赖注入与控制反转: object-oriented-programming/di-ioc.md
+  - Quiver快速入门:
+    - 开始使用: quiver-tutorial/01-getting-started.md
+    - 单元格类型: quiver-tutorial/02-cell-types.md
+    - 单元格操作: quiver-tutorial/03-cell-operations.md
+    - 图像、文件和链接: quiver-tutorial/04-images-files-and-links.md
+    - 预览和演示模式: quiver-tutorial/05-preview-and-presentation.md
+    - 全文搜索: quiver-tutorial/06-full-text-search.md
+    - 标签: quiver-tutorial/07-tagging.md
+    - 云同步: quiver-tutorial/08-cloud-syncing.md
+    - 团队协作: quiver-tutorial/09-team-collaboration.md
+    - 备份与恢复: quiver-tutorial/10-backup-and-recovery.md
+    - 导入与导出: quiver-tutorial/11-import-and-export.md
+    - 首选项: quiver-tutorial/12-preferences.md
