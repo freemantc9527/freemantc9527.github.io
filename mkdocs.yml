@@ -2,6 +2,8 @@ dev_addr: '127.0.0.1:8008'
 
 site_name: IT山人的知识库
 site_author: IT山人
+site_description: "这是IT山人的个人知识库，记录工作学习中的点点滴滴📖"
+copyright: Copyright &copy; 2019 - 2022 IT山人
 
 repo_name: 'freemantc9527/freemantc9527.github.io'
 repo_url: 'https://github.com/freemantc9527/freemantc9527.github.io'
@@ -39,8 +41,7 @@ theme:
 
 plugins:
   - search:
-      lang: 
-        - ja
+      separator: '[\\s\\u200b\\-]'
   - git-revision-date
   - tags:
       tags_file: tags.md
@@ -49,8 +50,11 @@ markdown_extensions:
   - admonition
   - def_list
   - meta
+  - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -63,7 +67,6 @@ markdown_extensions:
       generic: true
   - pymdownx.highlight:
       auto_title: true
-  - pymdownx.keys
 
 extra_javascript:
   - javascripts/mathjax.js
