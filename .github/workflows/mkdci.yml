@@ -4,7 +4,6 @@ on:
     branches:
       - master
       - main
-permissions: read-all
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,4 +13,4 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material mkdocs-git-revision-date-plugin
-      - run: mkdocs gh-deploy
+      - run: mkdocs gh-deploy --force
